@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Pelican" />
     <meta name="description" content="迈达斯之手 Blog Posts">
-    <title>Archive | 迈达斯之手</title>
+    <title>Search | 迈达斯之手</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
     <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
@@ -48,46 +48,29 @@
             </button>
         </div>
         <ul class="flex flex-wrap lg:mr-24 md:pt-0">
-            <li class="mr-4 pt-6"><a  class="border-b-2 border-zinc-800 dark:border-zinc-300"
- href="/archives.html">Archive</a></li>
+            <li class="mr-4 pt-6"><a  href="/archives.html">Archive</a></li>
             <li class="mr-4 pt-6"><a                     href="/categories.html">Categories</a></li>
             <li class="mr-4 pt-6"><a  href="/tags.html">Tags</a></li>
-            <li class="mr-4 pt-6"><a  href="/search.html">Search</a></li>
+            <li class="mr-4 pt-6"><a  class="border-b-2 border-zinc-800 dark:border-zinc-300"
+ href="/search.html">Search</a></li>
         </ul>
     </nav>
     <div class="flex-grow md:max-w-screen-md md:mx-auto md:w-3/4 px-4">
-<div class="md:mt-14 text-zinc-800 dark:text-zinc-300 pb-6">
-    <h1 class="font-bold text-4xl my-10 px-1">Archive</h1>
-    <ul class="flex-col">
-        <li>
-            <div class="my-6 px-2">
-                <h2 class="text-2xl font-semibold">2023
-                    <sup class="text-sm text-zinc-800 dark:text-zinc-400">
-                        1
 
-                    </sup>
-                </h2>
-            </div>
-            <div class="md:flex p-2">
-                <div class="flex text-xl font-semibold md:w-40">
-                    三月
-                    <sup class="text-sm m-1 text-zinc-800 dark:text-zinc-400">
-                        1
-
-                    </sup>
-                </div>
-                <div class="flex-1">
-                    <a href="/test.html">
-                        <span class="text-lg">Test</span>
-                        <div class="flex text-xs text-zinc-800 dark:text-zinc-400">
-                            <time>三月 16, 2023</time>
-                            <span>&nbsp;·&nbsp;Xiaoyu</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </li>
-    </ul>
+<div class="relative mb-12 md:mt-14 text-zinc-800 dark:text-zinc-300">
+    <h1 class="flex font-bold my-10 text-4xl mb-12 md:my-12 text-zinc-800 dark:text-zinc-300">Search&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    <div class="stork-wrapper">
+        <input
+            class="font-semibold h-10 w-full border-2 border-zinc-500  bg-zinc-100 dark:bg-zinc-800 placeholder-zinc-400 dark:placeholder-zinc-300 focus:border-zinc-500 focus:outline-none rounded-lg pl-4"
+            data-stork="sitesearch" autofocus="" placeholder=" Search ↵" aria-label="search" type="search">
+        <div data-stork="sitesearch-output" class=""></div>
+    </div>
 </div>
 
     </div>
@@ -131,6 +114,10 @@
                 }
             }
         });
+    </script>
+    <script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
+    <script>
+        stork.register("sitesearch", "/search-index.st")
     </script>
 </body>
 
