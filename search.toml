@@ -3,6 +3,6 @@ base_directory = "output"
 html_selector = "main"
 
 [[input.files]]
-path = "test.html"
-url = "/test.html"
-title = "Test"
+path = "cudaji-chu-zhi-shi-yi.html"
+url = "/cudaji-chu-zhi-shi-yi.html"
+title = "CUDA\u57fa\u7840\u77e5\u8bc6\uff08\u4e00\uff09"
